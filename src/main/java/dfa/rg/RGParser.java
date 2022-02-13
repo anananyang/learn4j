@@ -1,9 +1,7 @@
 package dfa.rg;
 
-import com.sun.xml.internal.messaging.saaj.packaging.mime.internet.HeaderTokenizer;
 import dfa.rg.ast.RGCommonNode;
 import dfa.rg.ast.RGNode;
-import jdk.nashorn.internal.parser.Token;
 
 import java.util.Stack;
 
