@@ -7,6 +7,9 @@ public class RGLexer {
     private int regexpLen;
 
     public RGLexer(String regexp) {
+        if(null == regexp ) {
+            throw new RuntimeException("regexp is null");
+        }
         this.regexp = regexp;
         this.regexpLen = regexp.length();
     }

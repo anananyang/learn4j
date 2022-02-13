@@ -14,6 +14,14 @@ public class RGToken {
         this.isOperator = isOperator;
     }
 
+    char getChar() {
+        return ch;
+    }
+
+    int getPos() {
+        return pos;
+    }
+
     boolean isOperator() {
         return isOperator;
     }

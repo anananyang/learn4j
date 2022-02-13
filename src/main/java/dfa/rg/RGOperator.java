@@ -5,13 +5,13 @@ import java.util.Map;
 
 public interface RGOperator {
 
-    String KLEENE = "*";
-    String LP = "(";
-    String RP = ")";
-    String OR = "|";
-    String JOIN = "+";
+    char KLEENE = '*';
+    char LP = '(';
+    char RP = ')';
+    char OR = '|';
+    char JOIN = '+';
 
-    Map<String, Integer> optMap = new HashMap<String, Integer>(){{
+    Map<Character, Integer> optMap = new HashMap<Character, Integer>(){{
        put(KLEENE, 1);
        put(LP, 2);
        put(RP, 2);
