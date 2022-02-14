@@ -8,4 +8,8 @@ public class RGJoinNode implements RGNode{
         this.firstNode = firstNode;
         this.secondNode = secondNode;
     }
+
+    public String toString() {
+        return firstNode.toString() + secondNode.toString();
+    }
 }

@@ -6,4 +6,8 @@ public class RGKleeneNode implements RGNode{
     public RGKleeneNode(RGNode node) {
         this.node = node;
     }
+
+    public String toString() {
+        return node.toString() + "*";
+    }
 }

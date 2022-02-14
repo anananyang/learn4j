@@ -6,4 +6,8 @@ public class RGParenthesesNode implements RGNode{
     public RGParenthesesNode(RGNode node) {
         this.node = node;
     }
+
+    public String toString() {
+        return "(" + node.toString() + ")";
+    }
 }

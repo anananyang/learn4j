@@ -8,4 +8,8 @@ public class RGCommonNode implements RGNode{
     public RGCommonNode(RGToken token) {
         this.token = token;
     }
+
+    public String toString() {
+        return "" + this.token.getChar();
+    }
 }
