@@ -1,4 +1,4 @@
-package innerClass.innerPackage;
+package basic.innerClass;
 
 import java.util.concurrent.ThreadLocalRandom;
 

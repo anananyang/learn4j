@@ -1,6 +1,5 @@
-package innerClass.innerPackage;
+package basic.innerClass;
 
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Parcel {
@@ -44,9 +43,16 @@ public class Parcel {
         System.out.println("label of destination is " + destination.readLabel());
     }
 
+    public void ship(Contents contents, Destination destination) {
+        System.out.println("destination content [" + contents.value() + " ] is " + destination.readLabel());
+    }
+
     public static void main(String[] args) {
         Parcel parcel = new Parcel(ThreadLocalRandom.current().nextInt());
-        parcel.ship("hangzhou");
+        Parcel.Contents contents = parcel.createContents();
+        Parcel.Destination destination = parcel.createDestination("hangzhou");
+        parcel.ship(contents, destination);;
+//        parcel.ship("hangzhou");
     }
 
 }
